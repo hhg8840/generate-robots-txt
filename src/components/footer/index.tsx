@@ -20,13 +20,13 @@ export default function Footer() {
               rel="noopener"
               target="_blank"
             >
-              <Image
-                alt="GitHub Logo"
-                loading="lazy"
-                width="28"
-                height="21"
-                src="/images/github.svg"
-              />
+              {/*<Image*/}
+              {/*  alt="GitHub Logo"*/}
+              {/*  loading="lazy"*/}
+              {/*  width="28"*/}
+              {/*  height="21"*/}
+              {/*  src="/images/github.svg"*/}
+              {/*/>*/}
             </a>
             <a
               className={styles.link}

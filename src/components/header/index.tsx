@@ -50,13 +50,13 @@ export default function Header() {
               target="_blank"
               title="Check the project on GitHub"
             >
-              <Image
-                alt="GitHub Logo"
-                loading="lazy"
-                width="28"
-                height="21"
-                src="/images/github.svg"
-              />
+              {/*<Image*/}
+              {/*  alt="GitHub Logo"*/}
+              {/*  loading="lazy"*/}
+              {/*  width="28"*/}
+              {/*  height="21"*/}
+              {/*  src="/images/github.svg"*/}
+              {/*/>*/}
             </Link>
           </Flex>
         </Flex>
