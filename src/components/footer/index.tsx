@@ -35,14 +35,14 @@ export default function Footer() {
               rel="noopener"
               target="_blank"
             >
-              <Image
-                alt="X Logo"
-                loading="lazy"
-                width="21"
-                height="21"
-                src="/images/x.svg"
-                style={{ position: "relative", top: "2px" }}
-              />
+              {/*<Image*/}
+              {/*  alt="X Logo"*/}
+              {/*  loading="lazy"*/}
+              {/*  width="21"*/}
+              {/*  height="21"*/}
+              {/*  src="/images/x.svg"*/}
+              {/*  style={{ position: "relative", top: "2px" }}*/}
+              {/*/>*/}
             </a>
           </Flex>
         </Flex>
