@@ -64,7 +64,7 @@ export default function Aibots({
                     onChangeAiBots(title, checked)
                   }
                 />
-                Block {title}
+                {title} 차단
               </Text>
             </Flex>
           ))}
