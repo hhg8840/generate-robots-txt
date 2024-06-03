@@ -57,7 +57,7 @@ export const defaults = [
 
 export const apps = [
   {
-    title: "워드프레스",
+    title: "WordPress",
     description:
       "This `robots.txt` file is optimized for WordPress sites, blocking sensitive directories while allowing access to important content.",
     code: `User-agent: *

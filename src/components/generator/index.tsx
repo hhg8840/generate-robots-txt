@@ -172,7 +172,7 @@ export default function Generator() {
           </Card>
 
           <Heading as="h2" align="center">
-            Optional configurations
+            차단 옵션
           </Heading>
           <Aibots
             onChangeAiBots={onChangeAiBots}
