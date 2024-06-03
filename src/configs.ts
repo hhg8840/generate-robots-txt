@@ -57,7 +57,7 @@ export const defaults = [
 
 export const apps = [
   {
-    title: "WordPress",
+    title: "워드프레스",
     description:
       "This `robots.txt` file is optimized for WordPress sites, blocking sensitive directories while allowing access to important content.",
     code: `User-agent: *
@@ -66,126 +66,126 @@ Disallow: /wp-includes/
 Allow: /wp-admin/admin-ajax.php
 Sitemap: https://www.yoursite.com/sitemap.xml`,
   },
-  {
-    title: "Shopify",
-    description:
-      "This `robots.txt` file is optimized for Shopify stores, allowing access to all important content while blocking admin and checkout pages.",
-    code: `User-agent: *
-Disallow: /admin/
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /orders/
-Disallow: /account/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Magento",
-    description:
-      "This `robots.txt` file is optimized for Magento stores, blocking sensitive directories and files.",
-    code: `User-agent: *
-Disallow: /admin/
-Disallow: /downloader/
-Disallow: /includes/
-Disallow: /pkginfo/
-Disallow: /var/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Drupal",
-    description:
-      "This `robots.txt` file is optimized for Drupal sites, blocking sensitive directories while allowing access to important content.",
-    code: `User-agent: *
-Disallow: /core/
-Disallow: /includes/
-Disallow: /misc/
-Disallow: /modules/
-Disallow: /profiles/
-Disallow: /scripts/
-Disallow: /themes/
-Disallow: /update.php
-Disallow: /xmlrpc.php
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Joomla",
-    description:
-      "This `robots.txt` file is optimized for Joomla sites, blocking sensitive directories while allowing access to important content.",
-    code: `User-agent: *
-Disallow: /administrator/
-Disallow: /bin/
-Disallow: /cache/
-Disallow: /cli/
-Disallow: /components/
-Disallow: /includes/
-Disallow: /installation/
-Disallow: /language/
-Disallow: /layouts/
-Disallow: /libraries/
-Disallow: /logs/
-Disallow: /modules/
-Disallow: /plugins/
-Disallow: /tmp/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "PrestaShop",
-    description:
-      "This `robots.txt` file is optimized for PrestaShop stores, blocking sensitive directories and files.",
-    code: `User-agent: *
-Disallow: /admin/
-Disallow: /app/
-Disallow: /bin/
-Disallow: /config/
-Disallow: /download/
-Disallow: /mails/
-Disallow: /modules/
-Disallow: /translations/
-Disallow: /upload/
-Disallow: /var/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Wix",
-    description:
-      "This `robots.txt` file is optimized for Wix sites, allowing access to all important content.",
-    code: `User-agent: *
-Disallow: /_api/
-Disallow: /files/
-Disallow: /site-assets/
-Disallow: /_partials/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "BigCommerce",
-    description:
-      "This `robots.txt` file is optimized for BigCommerce stores, blocking sensitive directories and files.",
-    code: `User-agent: *
-Disallow: /cart.php
-Disallow: /checkout/
-Disallow: /account.php
-Disallow: /search.php
-Disallow: /product_images/
-Disallow: /admin/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Squarespace",
-    description:
-      "This `robots.txt` file is optimized for Squarespace sites, allowing access to all important content.",
-    code: `User-agent: *
-Disallow: /api/
-Disallow: /config/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
-  {
-    title: "Weebly",
-    description:
-      "This `robots.txt` file is optimized for Weebly sites, allowing access to all important content.",
-    code: `User-agent: *
-Disallow: /ajax/
-Disallow: /api/
-Sitemap: https://www.yoursite.com/sitemap.xml`,
-  },
+//   {
+//     title: "Shopify",
+//     description:
+//       "This `robots.txt` file is optimized for Shopify stores, allowing access to all important content while blocking admin and checkout pages.",
+//     code: `User-agent: *
+// Disallow: /admin/
+// Disallow: /checkout/
+// Disallow: /cart/
+// Disallow: /orders/
+// Disallow: /account/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Magento",
+//     description:
+//       "This `robots.txt` file is optimized for Magento stores, blocking sensitive directories and files.",
+//     code: `User-agent: *
+// Disallow: /admin/
+// Disallow: /downloader/
+// Disallow: /includes/
+// Disallow: /pkginfo/
+// Disallow: /var/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Drupal",
+//     description:
+//       "This `robots.txt` file is optimized for Drupal sites, blocking sensitive directories while allowing access to important content.",
+//     code: `User-agent: *
+// Disallow: /core/
+// Disallow: /includes/
+// Disallow: /misc/
+// Disallow: /modules/
+// Disallow: /profiles/
+// Disallow: /scripts/
+// Disallow: /themes/
+// Disallow: /update.php
+// Disallow: /xmlrpc.php
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Joomla",
+//     description:
+//       "This `robots.txt` file is optimized for Joomla sites, blocking sensitive directories while allowing access to important content.",
+//     code: `User-agent: *
+// Disallow: /administrator/
+// Disallow: /bin/
+// Disallow: /cache/
+// Disallow: /cli/
+// Disallow: /components/
+// Disallow: /includes/
+// Disallow: /installation/
+// Disallow: /language/
+// Disallow: /layouts/
+// Disallow: /libraries/
+// Disallow: /logs/
+// Disallow: /modules/
+// Disallow: /plugins/
+// Disallow: /tmp/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "PrestaShop",
+//     description:
+//       "This `robots.txt` file is optimized for PrestaShop stores, blocking sensitive directories and files.",
+//     code: `User-agent: *
+// Disallow: /admin/
+// Disallow: /app/
+// Disallow: /bin/
+// Disallow: /config/
+// Disallow: /download/
+// Disallow: /mails/
+// Disallow: /modules/
+// Disallow: /translations/
+// Disallow: /upload/
+// Disallow: /var/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Wix",
+//     description:
+//       "This `robots.txt` file is optimized for Wix sites, allowing access to all important content.",
+//     code: `User-agent: *
+// Disallow: /_api/
+// Disallow: /files/
+// Disallow: /site-assets/
+// Disallow: /_partials/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "BigCommerce",
+//     description:
+//       "This `robots.txt` file is optimized for BigCommerce stores, blocking sensitive directories and files.",
+//     code: `User-agent: *
+// Disallow: /cart.php
+// Disallow: /checkout/
+// Disallow: /account.php
+// Disallow: /search.php
+// Disallow: /product_images/
+// Disallow: /admin/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Squarespace",
+//     description:
+//       "This `robots.txt` file is optimized for Squarespace sites, allowing access to all important content.",
+//     code: `User-agent: *
+// Disallow: /api/
+// Disallow: /config/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
+//   {
+//     title: "Weebly",
+//     description:
+//       "This `robots.txt` file is optimized for Weebly sites, allowing access to all important content.",
+//     code: `User-agent: *
+// Disallow: /ajax/
+// Disallow: /api/
+// Sitemap: https://www.yoursite.com/sitemap.xml`,
+//   },
 ];
 
 export const aiBots = [

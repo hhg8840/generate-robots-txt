@@ -151,7 +151,7 @@ export default function Generator() {
               <Heading as="h4" size="3">
                 <Flex gap="1">
                   <AppWindow strokeWidth={1.25} />
-                  Based on your project
+                  귀하의 프로젝트에 따라
                 </Flex>
               </Heading>
             </Inset>
