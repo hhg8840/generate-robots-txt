@@ -1,54 +1,54 @@
 export const defaults = [
   {
-    title: "Allow all robots to access the entire site",
+    title: "모든 robot 전체 사이트에 액세스할 수 있도록 허용",
     description:
       "This `robots.txt` file allows all search engines to index the entire content of the website.",
     code: `User-agent: *\nDisallow:`,
   },
   {
-    title: "Block all robots from the entire site",
+    title: "전체 사이트에서 모든 robot 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing any part of the website.",
     code: `User-agent: *\nDisallow: /`,
   },
   {
-    title: "Block a specific directory",
+    title: "특정 디렉토리 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing a specific directory of the website, such as `/private`.",
     code: `User-agent: *\nDisallow: /private/`,
   },
   {
-    title: "Block a specific file",
+    title: "특정 파일 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing a specific file of the website, such as `secret.html`.",
     code: `User-agent: *\nDisallow: /secret.html`,
   },
   {
-    title: "Allow only a specific robot (e.g., Googlebot) and block all others",
+    title: "특정 robot(예: Googlebot)만 허용하고 다른 로봇은 모두 차단",
     description:
       "This `robots.txt` file allows only Googlebot to index the website while blocking all other search engines.",
     code: `User-agent: Googlebot\nDisallow:\n\nUser-agent: *\nDisallow: /`,
   },
   {
-    title: "Block specific URL parameters",
+    title: "특정 URL 매개변수 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing URLs with specific parameters, such as those containing `?sessionid=`.",
     code: `User-agent: *\nDisallow: /*?sessionid=`,
   },
   {
-    title: "Allow crawling of a specific directory and block everything else",
+    title: "특정 디렉토리의 크롤링을 허용하고 다른 모든 디렉토리는 차단",
     description:
       "This `robots.txt` file allows all search engines to index only the content of a specific directory, such as `/public`, and blocks everything else.",
     code: `User-agent: *\nAllow: /public/\nDisallow: /`,
   },
   {
-    title: "Block images from a specific directory",
+    title: "특정 디렉토리의 이미지 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing images in a specific directory, such as `/images/private`.",
     code: `User-agent: *\nDisallow: /images/private/`,
   },
   {
-    title: "Block access to CSS and JS files",
+    title: "CSS 및 JS 파일에 대한 액세스 차단",
     description:
       "This `robots.txt` file prevents all search engines from indexing CSS and JS files.",
     code: `User-agent: *\nDisallow: /*.css$\nDisallow: /*.js$`,

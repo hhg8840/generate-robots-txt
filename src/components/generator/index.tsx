@@ -109,7 +109,7 @@ export default function Generator() {
       <Grid columns="2" gap="6" width="auto" py="6">
         <Grid columns="1" gap="6">
           <Heading as="h2" align="center">
-            Start selecting a default configuration
+            기본 구성 선택
           </Heading>
 
           <Card variant="classic">
@@ -122,7 +122,7 @@ export default function Generator() {
               <Heading as="h4" size="3">
                 <Flex gap="1">
                   <PackageOpen strokeWidth={1.25} />
-                  Based on your requirements
+                  귀하의 요구 사항에 따라
                 </Flex>
               </Heading>
             </Inset>

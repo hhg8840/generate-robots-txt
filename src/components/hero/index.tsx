@@ -19,20 +19,20 @@ export default function Hero({ feature }: HeroProps) {
           </Text>
         </Flex>
         <Text as="p" align="center" mt="5">
-          <a
-            href="https://www.producthunt.com/posts/robots-txt-generator-3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.ph}
-            title="Robots.txt Generator was ranked daily #2 for May 24th, 2024 on Product Hunt"
-          >
-            <Image
-              src="/images/ph.svg"
-              alt="Product Hunt Badge"
-              width="150"
-              height="45"
-            />
-          </a>
+          {/*<a*/}
+          {/*  href="https://www.producthunt.com/posts/robots-txt-generator-3"*/}
+          {/*  target="_blank"*/}
+          {/*  rel="noopener noreferrer"*/}
+          {/*  className={styles.ph}*/}
+          {/*  title="Robots.txt Generator was ranked daily #2 for May 24th, 2024 on Product Hunt"*/}
+          {/*>*/}
+          {/*  <Image*/}
+          {/*    src="/images/ph.svg"*/}
+          {/*    alt="Product Hunt Badge"*/}
+          {/*    width="150"*/}
+          {/*    height="45"*/}
+          {/*  />*/}
+          {/*</a>*/}
         </Text>
       </Container>
     </article>
