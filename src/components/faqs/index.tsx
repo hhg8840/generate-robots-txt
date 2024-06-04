@@ -14,46 +14,36 @@ export default function Faqs() {
   return (
     <Container id="faqs" className={styles.container}>
       <Heading as="h2" size="8" align="center" mb="2">
-        Frequenly asked questions
+        자주 묻는 질문
       </Heading>
       <Text as="p" align="center" size="4">
-        Here are some common questions about robots.txt files and how to use
-        them.
+        다음은 robots.txt 파일과 사용 방법에 대한 몇 가지 일반적인 질문입니다.
       </Text>
       <Grid columns="3" gap="6" mt="5">
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I submit a robots.txt file to search engines?
+              robots.txt 파일을 검색 엔진에 전송하려면 어떻게 하나요?
             </Heading>
 
             <p className={styles.text}>
-              You don't need to submit a robots.txt file to search engines.
-              Crawlers look for a robots.txt file before crawling a site. If
-              they find one, they read it first before scanning your site.
+              검색 엔진에 robots.txt 파일을 제출할 필요는 없습니다. 크롤러는 사이트를 크롤링하기 전에 robots.txt 파일을 찾습니다. 사이트를 찾으면 사이트를 스캔하기 전에 먼저 읽습니다.
             </p>
             <p className={styles.text}>
-              If you make changes to your robots.txt file and want to notify
-              Google, you can submit it to Google Search Console. Use the
-              Robots.txt Tester to paste the text file and click Submit.
+              robots.txt 파일을 변경하고 Google에 알리고 싶다면 해당 파일을 구글 서치 콘설(Google Search Console)에 제출하면 됩니다. Robots.txt 테스터를 사용하여 텍스트 파일을 붙여넣고 제출을 클릭하세요.
             </p>
           </Box>
         </Card>
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I add the generated robots.txt file to my website?
+              생성된 robots.txt 파일을 웹사이트에 추가하려면 어떻게 하나요?
             </Heading>
             <p className={styles.text}>
-              Search engines and other crawling bots look for a robots.txt file
-              in the main directory of your website. After generating the
-              robots.txt file, add it to the root folder of your website, which
-              can be found at <strong>https://yoursite.com/robots.txt</strong>.
+              검색 엔진 및 기타 크롤링 봇은 웹사이트의 기본 디렉터리에서 robots.txt 파일을 찾습니다. robots.txt 파일을 생성한 후 웹사이트의 루트 폴더에 추가합니다. <strong>https://yoursite.com/robots.txt</strong>.
             </p>
             <p className={styles.text}>
-              The method of adding a robots.txt file depends on the server and
-              CMS you are using. If you can't access the root directory, contact
-              your web hosting provider.
+              robots.txt 파일을 추가하는 방법은 사용 중인 서버와 CMS에 따라 다릅니다. 루트 디렉터리에 액세스할 수 없는 경우 웹 호스팅 제공업체에 문의하세요.
             </p>
           </Box>
         </Card>
@@ -61,14 +51,11 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I add my Sitemap to the robots.txt file?
+              robots.txt 파일에 사이트맵을 추가하려면 어떻게 하나요?
             </Heading>
 
             <p className={styles.text}>
-              You can add your Sitemap to the robots.txt file to make it easier
-              for bots to crawl your website content. The Sitemap file is
-              located at http://yourwebsite/sitemap.xml. Add a directive with
-              the URL of your Sitemap like this:
+              로봇이 웹사이트 콘텐츠를 더 쉽게 크롤링할 수 있도록 robots.txt 파일에 사이트맵을 추가할 수 있습니다. 사이트맵 파일은 http://yourwebsite/sitemap.xml 에 있습니다. 다음과 같이 사이트맵의 URL이 포함된 지시문을 추가합니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>

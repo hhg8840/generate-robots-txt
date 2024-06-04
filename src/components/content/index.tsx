@@ -38,21 +38,6 @@ export default function Content() {
             <span className={styles.code}>robots.txt</span>  템플릿을 선택할 수도 있습니다. 파일에 사이트맵을 추가할 수도 있습니다.
           </p>
 
-          <p className={styles.text}>
-            This is an open-source project, and everyone is welcome to
-            participate. You can contribute to the project on our{" "}
-            <Link
-              href={CONSTANTS.repository}
-              title="Github project"
-              target="_blank"
-              rel="noopener noreferrer"
-              underline="always"
-              weight="bold"
-            >
-              GitHub repository
-            </Link>
-            .
-          </p>
         </div>
       </article>
     </Container>
