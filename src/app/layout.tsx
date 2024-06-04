@@ -8,6 +8,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Contribute from "@/components/contribute";
 import Faqs from "@/components/faqs";
+import { Analytics } from "@vercel/analytics/react"
 
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -89,6 +90,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Theme>
+            <Analytics />
             <Header />
             {children}
             <Faqs />
