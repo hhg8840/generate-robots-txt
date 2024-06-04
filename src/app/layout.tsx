@@ -92,7 +92,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Faqs />
-            <Contribute />
+            {/*<Contribute />*/}
             <Footer />
           </Theme>
         </ThemeProvider>

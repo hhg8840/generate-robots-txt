@@ -30,7 +30,7 @@ export default function Faqs() {
               검색 엔진에 robots.txt 파일을 제출할 필요는 없습니다. 크롤러는 사이트를 크롤링하기 전에 robots.txt 파일을 찾습니다. 사이트를 찾으면 사이트를 스캔하기 전에 먼저 읽습니다.
             </p>
             <p className={styles.text}>
-              robots.txt 파일을 변경하고 Google에 알리고 싶다면 해당 파일을 구글 서치 콘설(Google Search Console)에 제출하면 됩니다. Robots.txt 테스터를 사용하여 텍스트 파일을 붙여넣고 제출을 클릭하세요.
+              robots.txt 파일을 변경하고 Google에 알리고 싶다면 해당 파일을 구글 서치 콘솔(Google Search Console)에 제출하면 됩니다. Robots.txt 테스터를 사용하여 텍스트 파일을 붙여넣고 제출을 클릭하세요.
             </p>
           </Box>
         </Card>
@@ -126,57 +126,51 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I define the User-agent?
+              사용자 에이전트는 어떻게 정의하나요?
             </Heading>
 
             <p className={styles.text}>
-              Specify the name of the bot to which you're giving crawl
-              instructions using the User-agent directive.
+              크롤링 명령을 내릴 봇의 이름을 지정합니다. 지시어를 제공할 봇의 이름을 지정합니다.
             </p>
             <p className={styles.text}>
-              To block or allow all crawlers from accessing some of your
-              content, use an asterisk (*):
+              모든 크롤러가 일부 콘텐츠에 액세스하지 못하도록 차단하거나 허용하려면 (*)를 사용합니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>User-agent: *</Code>
             </pre>
             <p className={styles.text}>
-              To allow only Google to crawl your pages, use:
+              Google만 페이지를 크롤링하도록 허용하려면 다음을 사용하세요:
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>User-agent: Googlebot</Code>
             </pre>
             <p className={styles.text}>
-              Keep in mind that each search engine has its own bots, which may
-              differ in name. For example, Yahoo's bot is Slurp. Google has
-              several bots for different purposes:
+              각 검색 엔진에는 이름이 다를 수 있는 자체 봇이 있다는 점에 유의하세요. 예를 들어, Naver의 봇은 예티(Yeti)입니다. Google에는 다양한 목적을 위한 여러 봇이 있습니다:
             </p>
-            <ul className={styles.list}>
-              <li className={styles.item}>Googlebot News—crawls news</li>
-              <li className={styles.item}>Google Mobile—crawls mobile pages</li>
-              <li className={styles.item}>Googlebot Video—crawls videos</li>
-              <li className={styles.item}>Googlebot Images—crawls images</li>
-              <li className={styles.item}>
-                Google AdSense—crawls websites to determine content and provide
-                relevant ads
-              </li>
-            </ul>
+            {/*<ul className={styles.list}>*/}
+            {/*  <li className={styles.item}>Googlebot News—crawls news</li>*/}
+            {/*  <li className={styles.item}>Google Mobile—crawls mobile pages</li>*/}
+            {/*  <li className={styles.item}>Googlebot Video—crawls videos</li>*/}
+            {/*  <li className={styles.item}>Googlebot Images—crawls images</li>*/}
+            {/*  <li className={styles.item}>*/}
+            {/*    Google AdSense—crawls websites to determine content and provide*/}
+            {/*    relevant ads*/}
+            {/*  </li>*/}
+            {/*</ul>*/}
           </Box>
         </Card>
 
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              Robots.txt syntax
+              Robots.txt 구문
             </Heading>
 
             <p className={styles.text}>
-              The robots.txt syntax consists of directives, parameters, and
-              special characters. Follow these rules for proper functionality:
+              robots.txt 구문은 지시문, 매개변수 및 특수 문자로 구성됩니다. 제대로 작동하려면 다음 규칙을 따르세요:
             </p>
             <p className={styles.text}>
-              1. Each directive must start on a new line with only one parameter
-              per line.
+              1. 각 지시문은 한 줄에 하나의 매개변수만 사용하여 새 줄에서 시작해야 합니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>
@@ -186,15 +180,14 @@ export default function Faqs() {
               </Code>
             </pre>
             <p className={styles.text}>
-              2. Robots.txt is case-sensitive. Match the case of folder names
-              exactly.
+              2. Robots.txt는 대소문자를 구분합니다. 폴더 이름의 대소문자를 정확히 일치시켜야 합니다.
             </p>
             <p className={styles.text}>Correct</p>
             <pre className={styles.pre}>
               <Code className={styles.code}>Disallow: /folder/</Code>
             </pre>
             <p className={styles.text}>
-              Incorrect if the actual folder name is lowercase
+              실제 폴더 이름이 소문자인 경우 잘못됨
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code} color="crimson">
@@ -202,8 +195,7 @@ export default function Faqs() {
               </Code>
             </pre>
             <p className={styles.text}>
-              3. Do not use quotation marks, spaces at the beginning of lines,
-              or semicolons after lines.
+              3. 따옴표, 줄의 시작 부분에 공백 또는 줄 뒤에 세미콜론을 사용하지 마세요.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code} color="crimson">
@@ -224,16 +216,16 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              Full documentation
+              참고 문서
             </Heading>
 
             <p className={styles.text}>
-              For more information on the robots.txt file, visit:
+              robots.txt 파일에 대한 자세한 내용은 다음을 참조하세요:
             </p>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <a
-                  href="https://en.wikipedia.org/wiki/Robots.txt"
+                  href="https://ko.wikipedia.org/wiki/Robots.txt"
                   rel="noopener"
                   target="_blank"
                 >
