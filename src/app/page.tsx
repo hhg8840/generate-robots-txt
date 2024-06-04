@@ -7,7 +7,7 @@ import Generator from "@/components/generator";
 export default function Home() {
   return (
     <main>
-      <Hero feature="Generate" />
+      <Hero feature="Generator Tool" />
       <Generator />
       <Content />
     </main>

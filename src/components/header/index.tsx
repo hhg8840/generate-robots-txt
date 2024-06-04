@@ -13,7 +13,7 @@ export default function Header() {
           <Link
             className={styles.logo}
             href="/"
-            title="Generate robots.txt dot com"
+            title="robots.txt Generator Tool"
           >
             <Image
               alt="Generate robots.txt logo"
