@@ -18,31 +18,24 @@ export default function Content() {
         </figure>
         <div>
           <Heading size="8" className={styles.title}>
-            Why to use this generator?
+            이 생성기를 사용해야 하는 이유는 무엇인가요?
           </Heading>
           <p className={styles.text}>
-            I developed this free{" "}
-            <span className={styles.code}>robots.txt</span> generator and{" "}
+            <span className={styles.code}>robots.txt</span> 생성기 및{" "}
             <Link
               href="/validator"
               title="Robots.txt validator tool"
               underline="always"
               weight="bold"
             >
-              validator tool
+              유효성 검사 도구
             </Link>{" "}
-            to help webmasters, SEO experts, and marketers quickly and easily
-            create this required file.
+            웹마스터, SEO 전문가, 마케팅 담당자가 이 필수 파일을 빠르고 쉽게 만들 수 있도록 도와줍니다.
           </p>
 
           <p className={styles.text}>
-            You can start using the ready-made suggestions. In the first case,
-            you customize the file by setting up directives (allow or disallow
-            crawling), the path (specific pages and files), and the bots that
-            should follow the directives. Or you can choose a ready-made{" "}
-            <span className={styles.code}>robots.txt</span> template containing
-            a set of the most common general and CMS directives. You may also
-            add a sitemap to the file.
+            미리 준비된 제안을 사용하여 시작할 수 있습니다. 첫 번째 경우에는 지시어(크롤링 허용 또는 허용 안 함), 경로(특정 페이지 및 파일), 지시어를 따라야 하는 봇을 설정하여 파일을 사용자 지정합니다. 또는 가장 일반적인 일반 및 CMS 지시어 집합이 포함된 미리 만들어진{" "}
+            <span className={styles.code}>robots.txt</span>  템플릿을 선택할 수도 있습니다. 파일에 사이트맵을 추가할 수도 있습니다.
           </p>
 
           <p className={styles.text}>
