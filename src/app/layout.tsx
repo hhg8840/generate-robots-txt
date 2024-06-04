@@ -15,10 +15,10 @@ import "@radix-ui/themes/styles.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://generaterobotstxt.com/"),
+  metadataBase: new URL("https://robotstxt.trainingk.ing/"),
   title: {
     default:
-      "Robots.txt Generator - A beautifully open-source robots.txt generator",
+      "Robots.txt Generator",
     template: "%s - Robots.txt Generator",
   },
   manifest: "/manifest.json",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Robots.txt Generator",
     description: "An beautifully open-source robots.txt generator",
-    url: "https://generaterobotstxt.com/images/og_image.png",
+    url: "https://robotstxt.trainingk.ing/images/og_image.png",
     siteName:
       "Robots.txt Generator - An beautifully open-source robots.txt generator",
     locale: "en_US",
