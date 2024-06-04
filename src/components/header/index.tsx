@@ -42,19 +42,15 @@ export default function Header() {
             <Separator orientation="vertical" size="1" />
 
             <Link
-                className={styles.link}
-                href={CONSTANTS.repository}
-                size="3"
-                weight="bold"
-                rel="noreferrer"
-                target="_blank"
-                title="Check the project on GitHub"
+              className={styles.link}
+              href={CONSTANTS.repository}
+              size="3"
+              weight="bold"
+              rel="noreferrer"
+              target="_blank"
+              title="Check the project on GitHub"
             >
-              <script src="https://ads-partners.coupang.com/g.js"></script>
-              <script>
-                new
-                PartnersCoupang.G({"id":668191,"template":"carousel","trackingCode":"AF5641264","width":"680","height":"140","tsource":""});
-              </script>
+
               {/*<Image*/}
               {/*  alt="GitHub Logo"*/}
               {/*  loading="lazy"*/}
