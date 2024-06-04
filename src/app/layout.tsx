@@ -9,6 +9,7 @@ import Footer from "@/components/footer";
 import Contribute from "@/components/contribute";
 import Faqs from "@/components/faqs";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -91,6 +92,7 @@ export default function RootLayout({
         >
           <Theme>
             <Analytics />
+            <SpeedInsights />
             <Header />
             {children}
             <Faqs />
