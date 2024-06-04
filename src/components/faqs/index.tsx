@@ -71,17 +71,14 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I use the Allow directive properly?
+              허용 지시어를 올바르게 사용하려면 어떻게 해야 하나요?
             </Heading>
 
             <p className={styles.text}>
-              The Allow directive counteracts the Disallow directive. Using
-              Allow and Disallow together, you can tell search engines to access
-              a specific folder, file, or page within a disallowed directory.
+              허용 지시어는 허용하지 않음 지시어를 대체합니다. 허용과 불허(Allow and Disallow)를 함께 사용하면 검색 엔진이 허용되지 않은 디렉터리 내의 특정 폴더, 파일 또는 페이지에 액세스하도록 지시할 수 있습니다.
             </p>
             <p className={styles.text}>
-              Example: search engines are not allowed to access the /album/
-              directory
+              예제: 검색 엔진은 /album/ 디렉터리에 액세스할 수 없습니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>Disallow: /album/ </Code>
@@ -92,17 +89,14 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              How do I use the Disallow directive properly?
+              Disallow 지시문을 올바르게 사용하려면 어떻게 해야 하나요?
             </Heading>
 
             <p className={styles.text}>
-              After filling in the User-agent directive, specify the behavior of
-              certain (or all) bots by adding crawl instructions. Here are some
-              tips:
+              사용자 에이전트 지시문을 작성한 후 크롤링 지침을 추가하여 특정(또는 모든) 봇의 동작을 지정합니다. Tips:
             </p>
             <p className={styles.text}>
-              1. Don't leave the Disallow directive without a value. In this
-              case, the bot will crawl all of the site's content.
+              1. Disallow 지시문을 값 없이 그대로 두지 마세요. 이 경우 봇이 사이트의 모든 콘텐츠를 크롤링합니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>
@@ -110,15 +104,13 @@ export default function Faqs() {
               </Code>
             </pre>
             <p className={styles.text}>
-              2. Do not list every file you want to block from crawling. Just
-              disallow access to a folder, and all files in it will be blocked
-              from crawling and indexing.
+              2. 크롤링을 차단하려는 모든 파일을 나열하지 마세요. 그냥 폴더에 대한 액세스를 허용하지 않으면 폴더에 있는 모든 파일이 크롤링 및 인덱싱에서 차단됩니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>Disallow: /folder/</Code>
             </pre>
             <p className={styles.text}>
-              3. Don't block access to the whole website unless necessary:
+              3. 필요한 경우가 아니라면 전체 웹사이트에 대한 액세스를 차단하지 마세요.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>
@@ -126,8 +118,7 @@ export default function Faqs() {
               </Code>
             </pre>
             <p className={styles.text}>
-              Make sure essential website pages are not blocked from crawling:
-              the home page, landing pages, product pages, etc.
+              홈페이지, 랜딩 페이지, 제품 페이지 등 필수 웹사이트 페이지가 크롤링에서 차단되지 않도록 주의 하세요.
             </p>
           </Box>
         </Card>
