@@ -19,10 +19,7 @@ export default function Hero({ feature }: HeroProps) {
           </Text>
         </Flex>
         <Text as="p" align="center" mt="5">
-          <iframe
-              src="https://ads-partners.coupang.com/widgets.html?id=668191&template=carousel&trackingCode=AF5641264&subId=&width=680&height=140&tsource="
-              width="680" height="140" frameBorder="0" scrolling="no" referrerPolicy="unsafe-url"
-              browsingtopics></iframe>
+
           {/*<a*/}
           {/*  href="https://www.producthunt.com/posts/robots-txt-generator-3"*/}
           {/*  target="_blank"*/}

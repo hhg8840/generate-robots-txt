@@ -100,11 +100,11 @@ export default function RootLayout({
             <Footer />
           </Theme>
         </ThemeProvider>
-        <Script
-          async
-          src="https://cloud.umami.is/script.js"
-          data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"
-        />
+        {/*<Script*/}
+        {/*  async*/}
+        {/*  src="https://cloud.umami.is/script.js"*/}
+        {/*  data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"*/}
+        {/*/>*/}
       </body>
     </html>
   );
