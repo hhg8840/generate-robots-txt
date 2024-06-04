@@ -44,14 +44,14 @@ export const metadata: Metadata = {
       url: "/images/apple-touch-icon.png",
     },
   ],
-  description: "An open-source robots.txt generator.",
+  description: "robots.txt Generator Util.",
   openGraph: {
     title: "Robots.txt Generator",
-    description: "An beautifully open-source robots.txt generator",
+    description: "robots.txt Generator Util",
     url: "https://robotstxt.trainingk.ing/images/og_image.png",
     siteName:
-      "Robots.txt Generator - An beautifully open-source robots.txt generator",
-    locale: "en_US",
+      "Robots.txt Generator - robots.txt Generator Util",
+    locale: "ko_KO",
     type: "website",
   },
   robots: {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title:
-      "Robots.txt Generator - An beautifully open-source robots.txt generator",
+      "Robots.txt Generator - robots.txt Generator Util",
     card: "summary_large_image",
   },
 };
@@ -82,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="ko" suppressHydrationWarning={true}>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
