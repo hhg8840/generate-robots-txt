@@ -38,6 +38,7 @@ export default function Content() {
             <span className={styles.code}>robots.txt</span>  템플릿을 선택할 수도 있습니다. 파일에 사이트맵을 추가할 수도 있습니다.
           </p>
 
+
         </div>
       </article>
     </Container>

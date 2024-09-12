@@ -83,29 +83,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning={true}>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Theme>
-            <Analytics />
-            <SpeedInsights />
-            <Header />
-            {children}
-            <Faqs />
-            {/*<Contribute />*/}
-            <Footer />
-          </Theme>
-        </ThemeProvider>
-        {/*<Script*/}
-        {/*  async*/}
-        {/*  src="https://cloud.umami.is/script.js"*/}
-        {/*  data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"*/}
-        {/*/>*/}
-      </body>
+    <body className={inter.className}>
+    <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+    >
+      <Theme>
+        <Analytics/>
+        <SpeedInsights/>
+        <Header/>
+        {children}
+        <Faqs/>
+        {/*<Contribute />*/}
+        <Footer/>
+      </Theme>
+    </ThemeProvider>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641" crossOrigin="anonymous"></script>
+    {/*<Script*/}
+    {/*  async*/}
+    {/*  src="https://cloud.umami.is/script.js"*/}
+    {/*  data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"*/}
+    {/*/>*/}
+    </body>
     </html>
   );
 }
