@@ -100,7 +100,9 @@ export default function RootLayout({
         <Footer/>
       </Theme>
     </ThemeProvider>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641" crossOrigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
+            crossOrigin="anonymous"></script>
+    <meta name="naver-site-verification" content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"/>
     {/*<Script*/}
     {/*  async*/}
     {/*  src="https://cloud.umami.is/script.js"*/}
