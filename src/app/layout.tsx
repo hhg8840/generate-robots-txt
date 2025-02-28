@@ -94,21 +94,6 @@ export default function RootLayout({
         <Analytics/>
         <SpeedInsights/>
         <Header/>
-        {/* Coupang Script Start */}
-        <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive" />
-        <Script id="coupang-ads" strategy="beforeInteractive">
-          {`
-              new PartnersCoupang.G({
-                "id":697475,
-                "trackingCode":"AF5641264",
-                "subId":null,
-                "template":"carousel",
-                "width":"300",
-                "height":"330"
-              });
-          `}
-        </Script>
-        {/* Coupang Script End */}
         {children}
         <Faqs/>
         {/*<Contribute />*/}

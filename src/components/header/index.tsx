@@ -5,10 +5,26 @@ import CONSTANTS from "@/constants";
 
 
 import styles from "./header.module.css";
+import Script from "next/script";
 
 export default function Header() {
   return (
     <header className={styles.header}>
+      {/* Coupang Script Start */}
+      <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive"/>
+      <Script id="coupang-ads" strategy="beforeInteractive">
+        {`
+              new PartnersCoupang.G({
+                "id":668191,
+                "trackingCode":"AF5641264",
+                "subId":null,
+                "template":"carousel",
+                "width":"680",
+                "height":"140"
+              });
+          `}
+      </Script>
+      {/* Coupang Script End */}
       <Container p="2">
         <Flex gap="2" justify="between" align="center">
           <Link
