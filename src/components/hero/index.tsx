@@ -19,7 +19,7 @@ export default function Hero({ feature }: HeroProps) {
             Quickly generate a robots.txt for your site
           </Text>
         </Flex>
-        <div style="text-align: center; margin: 10px 0px 10px 0px;">
+        <div style={{ textAlign: "center", margin: "10px 0px 10px 0px" }}>
           {/* Coupang Script Start */}
           <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive"/>
           <Script id="coupang-ads" strategy="beforeInteractive">
