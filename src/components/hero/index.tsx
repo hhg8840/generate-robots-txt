@@ -1,6 +1,7 @@
 import { Container, Flex, Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import styles from "./hero.module.css";
+import Script from "next/script";
 
 interface HeroProps {
   feature: string;
@@ -18,6 +19,23 @@ export default function Hero({ feature }: HeroProps) {
             Quickly generate a robots.txt for your site
           </Text>
         </Flex>
+        <div style="text-align: center; margin: 10px 0px 10px 0px;">
+          {/* Coupang Script Start */}
+          <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive"/>
+          <Script id="coupang-ads" strategy="beforeInteractive">
+            {`
+              new PartnersCoupang.G({
+                "id":697475,
+                "trackingCode":"AF5641264",
+                "subId":null,
+                "template":"carousel",
+                "width":"300",
+                "height":"330"
+              });
+          `}
+          </Script>
+          {/* Coupang Script End */}
+        </div>
         <Text as="p" align="center" mt="5">
 
           {/*<a*/}
