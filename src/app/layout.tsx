@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://robotstxt.trainingk.ing/"),
   title: {
     default:
-        "Robots.txt Generator",
+      "Robots.txt Generator",
     template: "%s - Robots.txt Generator",
   },
   manifest: "/manifest.json",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     description: "robots.txt Generator Util",
     url: "https://robotstxt.trainingk.ing/images/og_image.png",
     siteName:
-        "Robots.txt Generator - robots.txt Generator Util",
+      "Robots.txt Generator - robots.txt Generator Util",
     locale: "ko_KO",
     type: "website",
   },
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title:
-        "Robots.txt Generator - robots.txt Generator Util",
+      "Robots.txt Generator - robots.txt Generator Util",
     card: "summary_large_image",
   },
 };
@@ -77,38 +77,39 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="ko" suppressHydrationWarning={true}>
-      <body className={inter.className}>
-      <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-      >
-        <Theme>
-          <Analytics/>
-          <SpeedInsights/>
-          <Header/>
-          {children}
-          <Faqs/>
-          {/*<Contribute />*/}
-          <Footer/>
-        </Theme>
-      </ThemeProvider>
-      {/* Coupang Script Start */}
-      <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive" />
-      {/* Coupang Script End */}
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
-              crossOrigin="anonymous"></script>
-      <meta name="naver-site-verification" content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"/>
-      <meta name="google-site-verification" content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"/>
-
-      </body>
-      </html>
+    <html lang="ko" suppressHydrationWarning={true}>
+    <body className={inter.className}>
+    <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+    >
+      <Theme>
+        <Analytics/>
+        <SpeedInsights/>
+        <Header/>
+        {children}
+        <Faqs/>
+        {/*<Contribute />*/}
+        <Footer/>
+      </Theme>
+    </ThemeProvider>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
+            crossOrigin="anonymous"></script>
+    <meta name="naver-site-verification" content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"/>
+    <meta name="google-site-verification" content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"/>
+    {/*<Script*/}
+    {/*  async*/}
+    {/*  src="https://cloud.umami.is/script.js"*/}
+    {/*  data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"*/}
+    {/*/>*/}
+    </body>
+    </html>
   );
 }
