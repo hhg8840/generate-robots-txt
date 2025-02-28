@@ -1,7 +1,8 @@
+"use client"; // 클라이언트 컴포넌트로 선언
+
 import { Container, Flex, Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import styles from "./hero.module.css";
-import Script from "next/script";
 import { useEffect } from "react";
 
 interface HeroProps {
