@@ -10,21 +10,6 @@ import Script from "next/script";
 export default function Header() {
   return (
     <header className={styles.header}>
-      {/* Coupang Script Start */}
-      <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive"/>
-      <Script id="coupang-ads" strategy="beforeInteractive">
-        {`
-              new PartnersCoupang.G({
-                "id":668191,
-                "trackingCode":"AF5641264",
-                "subId":null,
-                "template":"carousel",
-                "width":"680",
-                "height":"140"
-              });
-          `}
-      </Script>
-      {/* Coupang Script End */}
       <Container p="2">
         <Flex gap="2" justify="between" align="center">
           <Link
@@ -67,6 +52,21 @@ export default function Header() {
               target="_blank"
               title="Check the project on GitHub"
             >
+              {/* Coupang Script Start */}
+              <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive"/>
+              <Script id="coupang-ads" strategy="beforeInteractive">
+                {`
+              new PartnersCoupang.G({
+                "id":697475,
+                "trackingCode":"AF5641264",
+                "subId":null,
+                "template":"carousel",
+                "width":"300",
+                "height":"330"
+              });
+          `}
+              </Script>
+              {/* Coupang Script End */}
 
               {/*<Image*/}
               {/*  alt="GitHub Logo"*/}
