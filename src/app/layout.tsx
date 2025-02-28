@@ -94,6 +94,21 @@ export default function RootLayout({
         <Analytics/>
         <SpeedInsights/>
         <Header/>
+        {/* Coupang Script Start */}
+        <Script src="https://ads-partners.coupang.com/g.js" strategy="beforeInteractive" />
+        <Script id="coupang-ads" strategy="beforeInteractive">
+          {`
+              new PartnersCoupang.G({
+                "id":697475,
+                "trackingCode":"AF5641264",
+                "subId":null,
+                "template":"carousel",
+                "width":"300",
+                "height":"330"
+              });
+          `}
+        </Script>
+        {/* Coupang Script End */}
         {children}
         <Faqs/>
         {/*<Contribute />*/}
@@ -104,11 +119,7 @@ export default function RootLayout({
             crossOrigin="anonymous"></script>
     <meta name="naver-site-verification" content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"/>
     <meta name="google-site-verification" content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"/>
-    {/*<Script*/}
-    {/*  async*/}
-    {/*  src="https://cloud.umami.is/script.js"*/}
-    {/*  data-website-id="03fb5087-8d74-47f2-a3ee-e4725b26e1cd"*/}
-    {/*/>*/}
+
     </body>
     </html>
   );
