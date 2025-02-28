@@ -1,26 +1,28 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "next-themes"; // Import useTheme
 import { Theme } from "@radix-ui/themes";
 
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Contribute from "@/components/contribute";
 import Faqs from "@/components/faqs";
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
 
+// Import the new Client Component
+import CoupangAds from './coupangAds';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  // ... (metadata settings)
   metadataBase: new URL("https://robotstxt.trainingk.ing/"),
   title: {
-    default:
-        "Robots.txt Generator",
+    default: "Robots.txt Generator",
     template: "%s - Robots.txt Generator",
   },
   manifest: "/manifest.json",
@@ -49,8 +51,7 @@ export const metadata: Metadata = {
     title: "Robots.txt Generator",
     description: "robots.txt Generator Util",
     url: "https://robotstxt.trainingk.ing/images/og_image.png",
-    siteName:
-        "Robots.txt Generator - robots.txt Generator Util",
+    siteName: "Robots.txt Generator - robots.txt Generator Util",
     locale: "ko_KO",
     type: "website",
   },
@@ -66,13 +67,13 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title:
-        "Robots.txt Generator - robots.txt Generator Util",
+    title: "Robots.txt Generator - robots.txt Generator Util",
     card: "summary_large_image",
   },
 };
 
 export const viewport: Viewport = {
+  // ... (viewport settings)
   themeColor: "#171717",
 };
 
@@ -84,11 +85,8 @@ export default function RootLayout({
   return (
       <html lang="ko" suppressHydrationWarning={true}>
       <head>
-        {/* Add Coupang Ads Script Here - after title tag */}
-        <Script id="coupang-ads-script" src="https://ads-partners.coupang.com/g.js" strategy="afterInteractive" />
-        <Script id="coupang-ads-init" strategy="afterInteractive">
-          {`new PartnersCoupang.G({"id":697475,"trackingCode":"AF5641264","subId":null,"template":"carousel","width":"300","height":"330"});`}
-        </Script>
+        {/* Coupang Ads Scripts - Remove existing script here */}
+        {/* The script will now be added dynamically after 10 seconds */}
       </head>
       <body className={inter.className}>
       <ThemeProvider
@@ -98,20 +96,29 @@ export default function RootLayout({
           disableTransitionOnChange
       >
         <Theme>
-          <Analytics/>
-          <SpeedInsights/>
-          <Header/>
+          <Analytics />
+          <SpeedInsights />
+          <Header />
           {children}
-          <Faqs/>
-
-          <Footer/>
+          <Faqs />
+          <Footer />
+          {/* Render the new Client Component */}
+          <CoupangAds/>
         </Theme>
       </ThemeProvider>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
-              crossOrigin="anonymous"></script>
-      <meta name="naver-site-verification" content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"/>
-      <meta name="google-site-verification" content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"/>
-
+      <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
+          crossOrigin="anonymous"
+      />
+      <meta
+          name="naver-site-verification"
+          content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"
+      />
+      <meta
+          name="google-site-verification"
+          content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"
+      />
       </body>
       </html>
   );
