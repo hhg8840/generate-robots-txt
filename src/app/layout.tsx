@@ -103,7 +103,7 @@ export default function RootLayout({
           <Faqs />
           <Footer />
           {/* Render the new Client Component */}
-          <CoupangAds/>
+          {/*<CoupangAds/>*/}
         </Theme>
       </ThemeProvider>
       <script
