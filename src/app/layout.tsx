@@ -20,7 +20,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   // ... (metadata settings)
-  metadataBase: new URL("https://robotstxt.trainingk.ing/"),
+  metadataBase: new URL("https://robotstxt.hankyungbiz.com/"),
   title: {
     default: "Robots.txt Generator",
     template: "%s - Robots.txt Generator",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Robots.txt Generator",
     description: "robots.txt Generator Util",
-    url: "https://robotstxt.trainingk.ing/images/og_image.png",
+    url: "https://robotstxt.hankyungbiz.com/images/og_image.png",
     siteName: "Robots.txt Generator - robots.txt Generator Util",
     locale: "ko_KO",
     type: "website",
@@ -110,10 +110,6 @@ export default function RootLayout({
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"
           crossOrigin="anonymous"
-      />
-      <meta
-          name="naver-site-verification"
-          content="d7cb7f2c6cc2e515d5b38da4e348691d7f6ddd0f"
       />
       <meta
           name="google-site-verification"
