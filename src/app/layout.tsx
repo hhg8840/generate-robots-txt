@@ -107,11 +107,12 @@ export default function RootLayout({
         </Theme>
       </ThemeProvider>
 
-      {/*<script*/}
-      {/*    async*/}
-      {/*    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1460515233106641"*/}
-      {/*    crossOrigin="anonymous"*/}
-      {/*/>*/}
+      <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2248591987136887"
+          crossOrigin="anonymous"
+      />
+
       <meta
           name="google-site-verification"
           content="0R-Zwg7kaOBU8J3Z58im_yVflJxXT-_gHVXQulRIAqs"
