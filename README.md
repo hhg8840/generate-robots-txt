@@ -1,24 +1,24 @@
-# Robots.txt Generator
+# youtube.txt Generator
 
-Welcome to the **Robots.txt Generator**! This tool helps you create a `robots.txt` file easily. The project is built with [Next.js](https://nextjs.org/) and uses [Radix UI](https://radix-ui.com/) for the interface.
+Welcome to the **youtube.txt Generator**! This tool helps you create a `youtube.txt` file easily. The project is built with [Next.js](https://nextjs.org/) and uses [Radix UI](https://radix-ui.com/) for the interface.
 
-[Check it out here!](https://robotstxt.hankyungmna.com/)
+[Check it out here!](https://youtubetxt.hankyungmna.com/)
 
-![Robots.txt Generator](https://robotstxt.hankyungmna.com/images/og_image.png)
+![youtube.txt Generator](https://youtubetxt.hankyungmna.com/images/og_image.png)
 
 ## Features
 
 - **Easy Configuration**: Choose from a variety of default configurations optimized for popular platforms like WordPress, Shopify, Magento, and more.
 - **Custom AI Bot Blocking**: Select specific AI bots to block from accessing your site.
-- **Sitemap Integration**: Add your sitemap URL to the `robots.txt` file.
-- **Downloadable Output**: Generate and download your custom `robots.txt` file.
-- **Validator**: Validate your `robots.txt` file and find erros.
+- **Sitemap Integration**: Add your sitemap URL to the `youtube.txt` file.
+- **Downloadable Output**: Generate and download your custom `youtube.txt` file.
+- **Validator**: Validate your `youtube.txt` file and find erros.
 
 # Contributing
 
 Contributions are welcome!
 
-This project is open source and you can see it live [here](https://robotstxt.hankyungmna.com/). Feel free to open an issue or create a pull request if you want to collaborate.
+This project is open source and you can see it live [here](https://youtubetxt.hankyungmna.com/). Feel free to open an issue or create a pull request if you want to collaborate.
 
 If you'd like to contribute, please follow these steps:
 

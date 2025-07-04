@@ -15,10 +15,10 @@ export default function Header() {
           <Link
             className={styles.logo}
             href="/"
-            title="robots.txt Generator Tool"
+            title="youtube.txt Generator Tool"
           >
             <Image
-              alt="Generate robots.txt logo"
+              alt="Generate youtube.txt logo"
               loading="lazy"
               width="28"
               height="28"

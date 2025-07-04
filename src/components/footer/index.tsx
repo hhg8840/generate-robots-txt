@@ -10,7 +10,7 @@ export default function Footer() {
       <Container p="2">
         <Flex gap="4" align="center" justify="between">
           <Text className={styles.text} weight={"bold"}>
-            © {currentYear} robots.txt.hankyungmna.com
+            © {currentYear} youtube.txt.hankyungmna.com
           </Text>
           <Flex gap="4" align="center">
             <a

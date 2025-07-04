@@ -20,10 +20,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   // ... (metadata settings)
-  metadataBase: new URL("https://robotstxt.hankyungmna.com/"),
+  metadataBase: new URL("https://youtubetxt.hankyungmna.com/"),
   title: {
-    default: "Robots.txt Generator",
-    template: "%s - Robots.txt Generator",
+    default: "youtube.txt Generator",
+    template: "%s - youtube.txt Generator",
   },
   manifest: "/manifest.json",
   icons: [
@@ -46,16 +46,16 @@ export const metadata: Metadata = {
       url: "/images/apple-touch-icon.png",
     },
   ],
-  description: "robots.txt Generator Util.",
+  description: "youtube.txt Generator Util.",
   openGraph: {
-    title: "Robots.txt Generator",
-    description: "robots.txt Generator Util",
-    url: "https://robotstxt.hankyungmna.com/images/og_image.png",
-    siteName: "Robots.txt Generator - robots.txt Generator Util",
+    title: "youtube.txt Generator",
+    description: "youtube.txt Generator Util",
+    url: "https://youtubetxt.hankyungmna.com/images/og_image.png",
+    siteName: "youtube.txt Generator - youtube.txt Generator Util",
     locale: "ko_KO",
     type: "website",
   },
-  robots: {
+  youtube: {
     index: true,
     follow: true,
     googleBot: {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Robots.txt Generator - robots.txt Generator Util",
+    title: "youtube.txt Generator - youtube.txt Generator Util",
     card: "summary_large_image",
   },
 };

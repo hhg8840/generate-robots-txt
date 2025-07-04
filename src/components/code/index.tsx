@@ -14,8 +14,8 @@ export default function Code({ value, onClear, onChangeValue }: CodeProps) {
   const [isValid, setIsValid] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  function validateRobotsTxt(robotsTxt: string) {
-    const lines = robotsTxt.split("\n");
+  function validateyoutubeTxt(youtubeTxt: string) {
+    const lines = youtubeTxt.split("\n");
 
     const userAgentRegex = /^User-agent:\s*(\*|[a-zA-Z0-9_-]+)$/i;
     const disallowAllowRegex = /^(Disallow|Allow):\s*(\/.*)?$/i;
@@ -91,7 +91,7 @@ export default function Code({ value, onClear, onChangeValue }: CodeProps) {
       setError(null);
       return;
     }
-    const { isValid, error } = validateRobotsTxt(value);
+    const { isValid, error } = validateyoutubeTxt(value);
     setIsValid(isValid);
 
     if (!isValid) {
@@ -105,7 +105,7 @@ export default function Code({ value, onClear, onChangeValue }: CodeProps) {
     const element = document.createElement("a");
     const file = new Blob([value || ""], { type: "text/plain" });
     element.href = URL.createObjectURL(file);
-    element.download = "robots.txt";
+    element.download = "youtube.txt";
     document.body.appendChild(element);
     element.click();
   };

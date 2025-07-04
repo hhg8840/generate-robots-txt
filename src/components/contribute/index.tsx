@@ -13,7 +13,7 @@ export default function Contribute() {
             src="/images/contribute.svg"
             width={400}
             height={400}
-            alt="<span className={styles.code}>Robots.txt</span>"
+            alt="<span className={styles.code}>youtube.txt</span>"
           />
         </figure>
         <div>

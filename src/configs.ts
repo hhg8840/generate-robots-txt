@@ -2,55 +2,55 @@ export const defaults = [
   {
     title: "모든 robot 전체 사이트에 액세스할 수 있도록 허용",
     description:
-      "This `robots.txt` file allows all search engines to index the entire content of the website.",
+      "This `youtube.txt` file allows all search engines to index the entire content of the website.",
     code: `User-agent: *\nDisallow:`,
   },
   {
     title: "전체 사이트에서 모든 robot 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing any part of the website.",
+      "This `youtube.txt` file prevents all search engines from indexing any part of the website.",
     code: `User-agent: *\nDisallow: /`,
   },
   {
     title: "특정 디렉토리 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing a specific directory of the website, such as `/private`.",
+      "This `youtube.txt` file prevents all search engines from indexing a specific directory of the website, such as `/private`.",
     code: `User-agent: *\nDisallow: /private/`,
   },
   {
     title: "특정 파일 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing a specific file of the website, such as `secret.html`.",
+      "This `youtube.txt` file prevents all search engines from indexing a specific file of the website, such as `secret.html`.",
     code: `User-agent: *\nDisallow: /secret.html`,
   },
   {
     title: "특정 robot(예: Googlebot)만 허용하고 다른 로봇은 모두 차단",
     description:
-      "This `robots.txt` file allows only Googlebot to index the website while blocking all other search engines.",
+      "This `youtube.txt` file allows only Googlebot to index the website while blocking all other search engines.",
     code: `User-agent: Googlebot\nDisallow:\n\nUser-agent: *\nDisallow: /`,
   },
   {
     title: "특정 URL 매개변수 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing URLs with specific parameters, such as those containing `?sessionid=`.",
+      "This `youtube.txt` file prevents all search engines from indexing URLs with specific parameters, such as those containing `?sessionid=`.",
     code: `User-agent: *\nDisallow: /*?sessionid=`,
   },
   {
     title: "특정 디렉토리의 크롤링을 허용하고 다른 모든 디렉토리는 차단",
     description:
-      "This `robots.txt` file allows all search engines to index only the content of a specific directory, such as `/public`, and blocks everything else.",
+      "This `youtube.txt` file allows all search engines to index only the content of a specific directory, such as `/public`, and blocks everything else.",
     code: `User-agent: *\nAllow: /public/\nDisallow: /`,
   },
   {
     title: "특정 디렉토리의 이미지 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing images in a specific directory, such as `/images/private`.",
+      "This `youtube.txt` file prevents all search engines from indexing images in a specific directory, such as `/images/private`.",
     code: `User-agent: *\nDisallow: /images/private/`,
   },
   {
     title: "CSS 및 JS 파일에 대한 액세스 차단",
     description:
-      "This `robots.txt` file prevents all search engines from indexing CSS and JS files.",
+      "This `youtube.txt` file prevents all search engines from indexing CSS and JS files.",
     code: `User-agent: *\nDisallow: /*.css$\nDisallow: /*.js$`,
   },
 ];
@@ -59,7 +59,7 @@ export const apps = [
   {
     title: "WordPress",
     description:
-      "This `robots.txt` file is optimized for WordPress sites, blocking sensitive directories while allowing access to important content.",
+      "This `youtube.txt` file is optimized for WordPress sites, blocking sensitive directories while allowing access to important content.",
     code: `User-agent: *
 Disallow: /wp-admin/
 Disallow: /wp-includes/
@@ -69,7 +69,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Shopify",
 //     description:
-//       "This `robots.txt` file is optimized for Shopify stores, allowing access to all important content while blocking admin and checkout pages.",
+//       "This `youtube.txt` file is optimized for Shopify stores, allowing access to all important content while blocking admin and checkout pages.",
 //     code: `User-agent: *
 // Disallow: /admin/
 // Disallow: /checkout/
@@ -81,7 +81,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Magento",
 //     description:
-//       "This `robots.txt` file is optimized for Magento stores, blocking sensitive directories and files.",
+//       "This `youtube.txt` file is optimized for Magento stores, blocking sensitive directories and files.",
 //     code: `User-agent: *
 // Disallow: /admin/
 // Disallow: /downloader/
@@ -93,7 +93,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Drupal",
 //     description:
-//       "This `robots.txt` file is optimized for Drupal sites, blocking sensitive directories while allowing access to important content.",
+//       "This `youtube.txt` file is optimized for Drupal sites, blocking sensitive directories while allowing access to important content.",
 //     code: `User-agent: *
 // Disallow: /core/
 // Disallow: /includes/
@@ -109,7 +109,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Joomla",
 //     description:
-//       "This `robots.txt` file is optimized for Joomla sites, blocking sensitive directories while allowing access to important content.",
+//       "This `youtube.txt` file is optimized for Joomla sites, blocking sensitive directories while allowing access to important content.",
 //     code: `User-agent: *
 // Disallow: /administrator/
 // Disallow: /bin/
@@ -130,7 +130,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "PrestaShop",
 //     description:
-//       "This `robots.txt` file is optimized for PrestaShop stores, blocking sensitive directories and files.",
+//       "This `youtube.txt` file is optimized for PrestaShop stores, blocking sensitive directories and files.",
 //     code: `User-agent: *
 // Disallow: /admin/
 // Disallow: /app/
@@ -147,7 +147,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Wix",
 //     description:
-//       "This `robots.txt` file is optimized for Wix sites, allowing access to all important content.",
+//       "This `youtube.txt` file is optimized for Wix sites, allowing access to all important content.",
 //     code: `User-agent: *
 // Disallow: /_api/
 // Disallow: /files/
@@ -158,7 +158,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "BigCommerce",
 //     description:
-//       "This `robots.txt` file is optimized for BigCommerce stores, blocking sensitive directories and files.",
+//       "This `youtube.txt` file is optimized for BigCommerce stores, blocking sensitive directories and files.",
 //     code: `User-agent: *
 // Disallow: /cart.php
 // Disallow: /checkout/
@@ -171,7 +171,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Squarespace",
 //     description:
-//       "This `robots.txt` file is optimized for Squarespace sites, allowing access to all important content.",
+//       "This `youtube.txt` file is optimized for Squarespace sites, allowing access to all important content.",
 //     code: `User-agent: *
 // Disallow: /api/
 // Disallow: /config/
@@ -180,7 +180,7 @@ Sitemap: https://www.yoursite.com/sitemap.xml`,
 //   {
 //     title: "Weebly",
 //     description:
-//       "This `robots.txt` file is optimized for Weebly sites, allowing access to all important content.",
+//       "This `youtube.txt` file is optimized for Weebly sites, allowing access to all important content.",
 //     code: `User-agent: *
 // Disallow: /ajax/
 // Disallow: /api/

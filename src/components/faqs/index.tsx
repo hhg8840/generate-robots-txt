@@ -17,33 +17,33 @@ export default function Faqs() {
         자주 묻는 질문
       </Heading>
       <Text as="p" align="center" size="4">
-        다음은 robots.txt 파일과 사용 방법에 대한 몇 가지 일반적인 질문입니다.
+        다음은 youtube.txt 파일과 사용 방법에 대한 몇 가지 일반적인 질문입니다.
       </Text>
       <Grid columns="3" gap="6" mt="5">
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              robots.txt 파일을 검색 엔진에 전송하려면 어떻게 하나요?
+              youtube.txt 파일을 검색 엔진에 전송하려면 어떻게 하나요?
             </Heading>
 
             <p className={styles.text}>
-              검색 엔진에 robots.txt 파일을 제출할 필요는 없습니다. 크롤러는 사이트를 크롤링하기 전에 robots.txt 파일을 찾습니다. 사이트를 찾으면 사이트를 스캔하기 전에 먼저 읽습니다.
+              검색 엔진에 youtube.txt 파일을 제출할 필요는 없습니다. 크롤러는 사이트를 크롤링하기 전에 youtube.txt 파일을 찾습니다. 사이트를 찾으면 사이트를 스캔하기 전에 먼저 읽습니다.
             </p>
             <p className={styles.text}>
-              robots.txt 파일을 변경하고 Google에 알리고 싶다면 해당 파일을 구글 서치 콘솔(Google Search Console)에 제출하면 됩니다. Robots.txt 테스터를 사용하여 텍스트 파일을 붙여넣고 제출을 클릭하세요.
+              youtube.txt 파일을 변경하고 Google에 알리고 싶다면 해당 파일을 구글 서치 콘솔(Google Search Console)에 제출하면 됩니다. youtube.txt 테스터를 사용하여 텍스트 파일을 붙여넣고 제출을 클릭하세요.
             </p>
           </Box>
         </Card>
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              생성된 robots.txt 파일을 웹사이트에 추가하려면 어떻게 하나요?
+              생성된 youtube.txt 파일을 웹사이트에 추가하려면 어떻게 하나요?
             </Heading>
             <p className={styles.text}>
-              검색 엔진 및 기타 크롤링 봇은 웹사이트의 기본 디렉터리에서 robots.txt 파일을 찾습니다. robots.txt 파일을 생성한 후 웹사이트의 루트 폴더에 추가합니다. <strong>https://yoursite.com/robots.txt</strong>.
+              검색 엔진 및 기타 크롤링 봇은 웹사이트의 기본 디렉터리에서 youtube.txt 파일을 찾습니다. youtube.txt 파일을 생성한 후 웹사이트의 루트 폴더에 추가합니다. <strong>https://yoursite.com/youtube.txt</strong>.
             </p>
             <p className={styles.text}>
-              robots.txt 파일을 추가하는 방법은 사용 중인 서버와 CMS에 따라 다릅니다. 루트 디렉터리에 액세스할 수 없는 경우 웹 호스팅 제공업체에 문의하세요.
+              youtube.txt 파일을 추가하는 방법은 사용 중인 서버와 CMS에 따라 다릅니다. 루트 디렉터리에 액세스할 수 없는 경우 웹 호스팅 제공업체에 문의하세요.
             </p>
           </Box>
         </Card>
@@ -51,11 +51,11 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              robots.txt 파일에 사이트맵을 추가하려면 어떻게 하나요?
+              youtube.txt 파일에 사이트맵을 추가하려면 어떻게 하나요?
             </Heading>
 
             <p className={styles.text}>
-              로봇이 웹사이트 콘텐츠를 더 쉽게 크롤링할 수 있도록 robots.txt 파일에 사이트맵을 추가할 수 있습니다. 사이트맵 파일은 http://yourwebsite/sitemap.xml 에 있습니다. 다음과 같이 사이트맵의 URL이 포함된 지시문을 추가합니다.
+              로봇이 웹사이트 콘텐츠를 더 쉽게 크롤링할 수 있도록 youtube.txt 파일에 사이트맵을 추가할 수 있습니다. 사이트맵 파일은 http://yourwebsite/sitemap.xml 에 있습니다. 다음과 같이 사이트맵의 URL이 포함된 지시문을 추가합니다.
             </p>
             <pre className={styles.pre}>
               <Code className={styles.code}>
@@ -163,11 +163,11 @@ export default function Faqs() {
         <Card variant="classic">
           <Box p="3">
             <Heading className={styles.title} as="h3" size="6">
-              Robots.txt 구문
+              youtube.txt 구문
             </Heading>
 
             <p className={styles.text}>
-              robots.txt 구문은 지시문, 매개변수 및 특수 문자로 구성됩니다. 제대로 작동하려면 다음 규칙을 따르세요:
+              youtube.txt 구문은 지시문, 매개변수 및 특수 문자로 구성됩니다. 제대로 작동하려면 다음 규칙을 따르세요:
             </p>
             <p className={styles.text}>
               1. 각 지시문은 한 줄에 하나의 매개변수만 사용하여 새 줄에서 시작해야 합니다.
@@ -180,7 +180,7 @@ export default function Faqs() {
               </Code>
             </pre>
             <p className={styles.text}>
-              2. Robots.txt는 대소문자를 구분합니다. 폴더 이름의 대소문자를 정확히 일치시켜야 합니다.
+              2. youtube.txt는 대소문자를 구분합니다. 폴더 이름의 대소문자를 정확히 일치시켜야 합니다.
             </p>
             <p className={styles.text}>Correct</p>
             <pre className={styles.pre}>
@@ -220,34 +220,34 @@ export default function Faqs() {
             </Heading>
 
             <p className={styles.text}>
-              robots.txt 파일에 대한 자세한 내용은 다음을 참조하세요:
+              youtube.txt 파일에 대한 자세한 내용은 다음을 참조하세요:
             </p>
             <ul className={styles.list}>
               <li className={styles.item}>
                 <a
-                  href="https://ko.wikipedia.org/wiki/Robots.txt"
+                  href="https://ko.wikipedia.org/wiki/youtube.txt"
                   rel="noopener"
                   target="_blank"
                 >
-                  Wikipedia's Robots.txt page
+                  Wikipedia's youtube.txt page
                 </a>
               </li>
               <li className={styles.item}>
                 <a
-                  href="https://developers.google.com/search/docs/advanced/robots/intro"
+                  href="https://developers.google.com/search/docs/advanced/youtube/intro"
                   rel="noopener"
                   target="_blank"
                 >
-                  Google's Robots.txt specifications
+                  Google's youtube.txt specifications
                 </a>
               </li>
               <li className={styles.item}>
                 <a
-                  href="https://www.robotstxt.org/robotstxt.html"
+                  href="https://www.youtubetxt.org/youtubetxt.html"
                   rel="noopener"
                   target="_blank"
                 >
-                  The Robots Exclusion Protocol
+                  The youtube Exclusion Protocol
                 </a>
               </li>
             </ul>

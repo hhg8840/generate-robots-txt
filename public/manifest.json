@@ -4,9 +4,9 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Robots.txt Generator",
-  "description": "A beautifully open-source robots txt generator",
-  "short_name": "generate-robots-txt",
+  "name": "youtube.txt Generator",
+  "description": "A beautifully open-source youtube txt generator",
+  "short_name": "generate-youtube-txt",
   "icons": [
     {
       "src": "/images/icon-192x192.png",

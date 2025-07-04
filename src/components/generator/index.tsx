@@ -164,7 +164,7 @@ export default function Generator() {
                       value="1"
                       onClick={() => onClickSelection(title)}
                     />
-                    robots.txt for {title}
+                    youtube.txt for {title}
                   </Text>
                 </Flex>
               ))}
@@ -187,7 +187,7 @@ export default function Generator() {
         <div>
           <div className={styles.sticky}>
             <Heading as="h2" align="center">
-              Your <span className={styles.code}>robots.txt</span> file
+              Your <span className={styles.code}>youtube.txt</span> file
             </Heading>
             <Text as={"p"} align={"center"} mb="4">
               Your raw file, feel free to create it by your own or download it

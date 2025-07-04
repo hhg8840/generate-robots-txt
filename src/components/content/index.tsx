@@ -13,7 +13,7 @@ export default function Content() {
             src="/images/code.svg"
             width={400}
             height={400}
-            alt="<span className={styles.code}>Robots.txt</span>"
+            alt="<span className={styles.code}>youtube.txt</span>"
           />
         </figure>
         <div>
@@ -21,10 +21,10 @@ export default function Content() {
             이 생성기를 사용해야 하는 이유는 무엇인가요?
           </Heading>
           <p className={styles.text}>
-            <span className={styles.code}>robots.txt</span> 생성기 및{" "}
+            <span className={styles.code}>youtube.txt</span> 생성기 및{" "}
             <Link
               href="/validator"
-              title="Robots.txt validator tool"
+              title="youtube.txt validator tool"
               underline="always"
               weight="bold"
             >
@@ -35,7 +35,7 @@ export default function Content() {
 
           <p className={styles.text}>
             미리 준비된 제안을 사용하여 시작할 수 있습니다. 첫 번째 경우에는 지시어(크롤링 허용 또는 허용 안 함), 경로(특정 페이지 및 파일), 지시어를 따라야 하는 봇을 설정하여 파일을 사용자 지정합니다. 또는 가장 일반적인 일반 및 CMS 지시어 집합이 포함된 미리 만들어진{" "}
-            <span className={styles.code}>robots.txt</span>  템플릿을 선택할 수도 있습니다. 파일에 사이트맵을 추가할 수도 있습니다.
+            <span className={styles.code}>youtube.txt</span>  템플릿을 선택할 수도 있습니다. 파일에 사이트맵을 추가할 수도 있습니다.
           </p>
 
 

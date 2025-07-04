@@ -17,7 +17,7 @@ export default function Validate() {
   return (
     <Container maxWidth="var(--container-2)" className={styles.container}>
       <Heading as="h2" align="center" mb="3" size="8">
-        Check your <span className={styles.code}>robots.txt</span> file
+        Check your <span className={styles.code}>youtube.txt</span> file
       </Heading>
       <Text as="p" align="center" mb="3" size="5">
         Validate your file syntax to ensure it's correctly formatted.
